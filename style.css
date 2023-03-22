@@ -2,13 +2,17 @@
 
 :root{
   --primary-color: #f2f2f2;
+  --dark-color: #333333;
+  --gray-color: #8e8e8e;
 
-  --margin-space: 1rem;
-  --padding-space: 2.5rem;
+  --em-100: 1em;
+  --em-200: 1.5em;
+  --em-300: 2em;
+  --em-400: 2.5em;
+  --em-500: 3.5em;
+
 
   --body-bg: var(--primary-color);
-
-
 }
 
 /* Box sizing rules */
@@ -49,8 +53,10 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   background: var(--body-bg);
+  color: var(--dark-color);
 }
 
 /* A elements that don't have a class get default styles */
@@ -95,33 +101,60 @@ a {
 }
 
 .container {
-  width: min(100% - 1rem, 1320px);
+  width: min(100% - 1rem, 1020px);
   margin-inline: auto;
   padding: 1rem;
-  /* padding-top: 4rem; */
+}
+
+.section {
+  padding-block: var(--em-500);
 }
 
 /* 
   HEADER AND NAVIGATION STYLING
 */
-.navbar {
+.header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  padding: var(--em-100);
+
+  gap: var(--em-100);
 }
 
-.navbar-logo {
-  font-size: 1.5rem;
+.logo {
+  font-size: var(--em-200);
 }
 
 
-/* CONTENT STYLING */
-.content {
+.navbar-menu {
+  margin: 0;
+  padding: 0;
+
+  font-size: var(--em-100);
+  color: var(--gray-color);
+
+  display: flex;
+  gap: var(--em-300);
+}
+
+.navbar-menu > *{
+  cursor: pointer;
+}
+
+
+.navbar-menu > *:hover {
+  text-decoration: underline 2px var(--gray-color);
+}
+
+
+/* 
+  CONTENT STYLING 
+*/
+.card-content {
   background-color: var(--primary-color);
   height: 100vh;
-
-  margin: var(--margin-space);
-  padding: var(--padding-space);
+  padding: var(--em-400);
 
   border-radius: 50px;
   box-shadow:  -20px 20px 60px #cecece,
@@ -129,3 +162,23 @@ a {
   outline: 1.5px solid rgba(0, 0, 0, 0.05);
 }
 
+
+/* 
+  HERO STYLING
+*/
+.hero-image {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
