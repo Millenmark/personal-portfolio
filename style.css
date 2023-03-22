@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
-  --primary-color: #f2f2f2;
+  --primary-color: white;
+  --secondary-color: #f2f2f2;
+  --complementary-color: #8032f6;
   --dark-color: #333333;
   --gray-color: #8e8e8e;
 
@@ -18,7 +20,7 @@
 
 
 
-  --body-bg: var(--primary-color);
+  --body-bg: url("./assets/svg/background-04.svg");
 }
 
 /* Box sizing rules */
@@ -63,6 +65,11 @@ body {
   font-family: 'Poppins', sans-serif;
   background: var(--body-bg);
   color: var(--dark-color);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* A elements that don't have a class get default styles */
@@ -136,6 +143,10 @@ a {
   font-size: var(--em-200);
 }
 
+.logo strong {
+  color: var(--complementary-color)
+}
+
 
 .navbar-menu {
   margin: 0;
@@ -167,8 +178,6 @@ a {
   padding: var(--em-400);
 
   border-radius: 50px;
-  box-shadow:  -20px 20px 60px #cecece,
-                20px -20px 60px #ffffff;
   outline: 1.5px solid rgba(0, 0, 0, 0.05);
 }
 
