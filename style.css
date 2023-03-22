@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root{
+  --primary-color: #f2f2f2;
+
+  --margin-space: 1rem;
+  --padding-space: 2.5rem;
+
+  --body-bg: var(--primary-color);
+
+
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -39,7 +50,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
-  background-color: #f6f6f6;
+  background: var(--body-bg);
 }
 
 /* A elements that don't have a class get default styles */
@@ -83,20 +94,38 @@ a {
   }
 }
 
-.header {
-  z-index: 1;
-  background-color: brown;
-  width: 100%;
-  position: fixed;
-}
-
 .container {
   width: min(100% - 1rem, 1320px);
   margin-inline: auto;
   padding: 1rem;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
 }
 
-.footer {
-  background-color: brown;
+/* 
+  HEADER AND NAVIGATION STYLING
+*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.navbar-logo {
+  font-size: 1.5rem;
+}
+
+
+/* CONTENT STYLING */
+.content {
+  background-color: var(--primary-color);
+  height: 100vh;
+
+  margin: var(--margin-space);
+  padding: var(--padding-space);
+
+  border-radius: 50px;
+  box-shadow:  -20px 20px 60px #cecece,
+                20px -20px 60px #ffffff;
+  outline: 1.5px solid rgba(0, 0, 0, 0.05);
+}
+
