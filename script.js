@@ -9,4 +9,4 @@ let typed = new Typed('#element', {
 setTimeout(() => {
   emailBtn.style.visibility = "visible"
   emailBtn.classList.add('animate__bounce')
-}, 17000)
+}, 16500)
