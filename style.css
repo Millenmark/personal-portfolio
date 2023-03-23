@@ -165,9 +165,14 @@ a {
 
 
 .navbar-menu > *:hover {
-  text-decoration: underline 2px var(--gray-color);
+  /* text-decoration: underline 2px var(--gray-color); */
+  border-bottom:  2px solid var(--gray-color);
+
 }
 
+.active {
+  border-bottom:  2px solid var(--complementary-color);
+}
 
 /* 
   CONTENT STYLING 
