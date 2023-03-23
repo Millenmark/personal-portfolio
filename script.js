@@ -12,15 +12,3 @@ setTimeout(() => {
   emailBtn.style.visibility = "visible"
   emailBtn.classList.add('animate__bounce')
 }, 16500)
-
-Path.map("#/").to(() => {
-  fetch("hero.html")
-    .then(response => response.text())
-    .then(html => {
-      // Render the HTML content
-      document.querySelector("#content").innerHTML = html;
-    })
-    .catch(error => {
-      console.error(error);
-    });
-});
