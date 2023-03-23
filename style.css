@@ -258,6 +258,7 @@ a {
 }
 
 .email-btn {
+  visibility: hidden;
   background-color: var(--primary-color);
   border: 2px solid var(--complementary-color);
   border-radius: 50px;
@@ -329,3 +330,5 @@ a {
     text-align: left;
   }
 }
+
+
