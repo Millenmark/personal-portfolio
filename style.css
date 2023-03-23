@@ -230,6 +230,10 @@ a {
   box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.15);
 }
 
+.hero-about {
+  margin-top: var(--em-300);
+}
+
 .hero-about h1{
   text-align: center;
   font-size: var(--em-300);
@@ -247,6 +251,10 @@ a {
 .hero-about p {
   text-align: justify;
   text-justify: inter-word;
+}
+
+.typing-element {
+  min-height: 160px;
 }
 
 .email-btn {
@@ -306,6 +314,10 @@ a {
 
   .section {
     flex-direction: row;
+  }
+
+  .hero-about {
+    margin: 0;
   }
 
   .hero-about h1{
