@@ -296,6 +296,9 @@ a {
   background-color: var(--dark-color);
 }
 
+.copy {
+  visibility: visible;
+}
 
 @media screen and (min-width: 640px) {
   /* body {
