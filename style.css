@@ -260,6 +260,8 @@ a {
 
 .typing-element {
   min-height: 160px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .btn {
