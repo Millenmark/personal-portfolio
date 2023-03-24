@@ -314,7 +314,6 @@ a {
 }
 
 .project-image img {
-  aspect-ratio: 16/9;
   overflow: hidden;
   object-fit: contain;
   object-position: center;
