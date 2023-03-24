@@ -499,6 +499,7 @@ asdfasdfa
 }
 
 .overlay-color {
+  overflow: hidden;
   background: var(--gray-color);
   position: absolute;
   mix-blend-mode: multiply;
