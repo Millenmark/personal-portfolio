@@ -308,8 +308,8 @@ a {
 */
 
 .project-image {
-  padding: .2rem;
-  border: 2px solid var(--gray-color);
+  overflow: hidden;
+  border: 2px solid #9e90fa;
   border-radius: 20px;
 }
 
@@ -318,13 +318,15 @@ a {
   overflow: hidden;
   object-fit: contain;
   object-position: center;
-  border-radius: 16px;
 }
 
 .project-item {
+  /* padding: .5rem; */
   overflow: hidden;
   max-width: 250px;
   height: 270px;
+  /* border: 2px solid var(--dark-color);
+  border-radius: 20px; */
 }
 
 .project-name {
