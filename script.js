@@ -18,4 +18,3 @@ setTimeout(() => {
   resumeBtn.style.visibility = "visible"
   resumeBtn.classList.add('animate__bounce')
 }, 17500)
-
