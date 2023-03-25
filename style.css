@@ -360,8 +360,8 @@ a {
 
 .live-btn {
   position: absolute;
-  bottom: .5rem;
-  right: .5rem;
+  bottom: 1rem;
+  right: 1rem;
   padding: 0 .5rem;
   outline: 1px solid white;
   border-radius: 20px;
