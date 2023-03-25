@@ -314,11 +314,17 @@ a {
   transition: all .5s ease;
 }
 
+.project-container h3 {
+  padding: .3rem .5rem;
+}
+
 .project-item {
   position: relative;
   height: 130px;
   width: 250px;
   aspect-ratio: 16/9;
+
+  color: white;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -327,13 +333,35 @@ a {
   border-radius: 16px;
 
   transition: all .4s ease-in-out !important;
+
+  overflow: hidden;
+}
+
+.project-item ul {
+  margin: 0;
+  padding: 0 1em;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--dark-color);
+  border-top-right-radius: 25px;
+}
+
+.project-item ul li {
+  padding-bottom: .3em;
+  font-size: .75em;
+  font-weight: 500;
+  /* border-left: 2px solid rgb(231, 231, 115); */
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 .live-btn {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  color: white;
   padding: 0 .5rem;
   outline: 1px solid white;
   border-radius: 20px;
