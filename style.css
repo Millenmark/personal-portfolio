@@ -316,8 +316,8 @@ a {
 
 .project-item {
   position: relative;
-  height: 180px;
-  max-width: 390px;
+  height: 130px;
+  width: 250px;
   aspect-ratio: 16/9;
 
   background-repeat: no-repeat;
@@ -357,6 +357,11 @@ a {
   .header {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .project-item {
+    height: 200px;
+    width: 390px;
   }
 }
 
