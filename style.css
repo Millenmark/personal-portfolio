@@ -360,20 +360,19 @@ a {
 
 .live-btn {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  padding: 0 .5rem;
-  outline: 1px solid white;
-  border-radius: 20px;
+  bottom: 0rem;
+  right: 0rem;
+  padding: .2rem 1rem;
+  outline: 2px solid white;
+  border-top-left-radius: 16px;
   transition: all .2s ease-out;
   font-weight: 500;
   font-size: 1em;
+  background-color: var(--complementary-color);
 }
 
 .live-btn:hover {
-  color: white;
-  background-color: var(--complementary-color);
-  outline: none;
+  background-color: #5548a8;
 }
 
 
