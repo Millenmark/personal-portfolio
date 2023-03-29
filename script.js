@@ -12,9 +12,9 @@ let typed = new Typed('#element', {
 setTimeout(() => {
   emailBtn.style.visibility = "visible"
   emailBtn.classList.add('animate__bounce')
-}, 16500)
+}, 10500)
 
 setTimeout(() => {
   resumeBtn.style.visibility = "visible"
   resumeBtn.classList.add('animate__bounce')
-}, 17500)
+}, 11500)
