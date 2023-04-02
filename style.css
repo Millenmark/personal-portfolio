@@ -114,6 +114,7 @@ a {
 }
 
 .container {
+  position: relative;
   width: min(100% - 1rem, 1220px);
   margin-inline: auto;
   padding: 1rem;
@@ -375,6 +376,54 @@ a {
   background-color: #5548a8;
 }
 
+.project-name {
+  margin-top: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Tooltip */
+/* Style the tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-right: .5rem;
+}
+
+.tooltip i {
+  font-size: 1.5em;
+}
+
+/* Style the tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--dark-color);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: -40%;
+  right: 120%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Technologies Section Styling */
+.tech-section > .heading{
+  text-align: center;
+}
 
 @media screen and (min-width: 640px) {
   /* body {
