@@ -114,7 +114,6 @@ a {
 }
 
 .container {
-  position: relative;
   width: min(100% - 1rem, 1220px);
   margin-inline: auto;
   padding: 1rem;
@@ -182,6 +181,8 @@ a {
   CONTENT STYLING 
 */
 .card-content {
+  position: relative;
+
   background-color: var(--primary-color);
   height: 100%;
   padding: var(--em-400);
@@ -399,19 +400,32 @@ a {
 /* Style the tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
-  background-color: var(--dark-color);
+  width: auto;
+  background-color: white;
+  box-shadow: 2px 0px 5px 4px #3333333a;
   color: #fff;
   text-align: left;
   border-radius: 6px;
   padding: 5px;
   position: absolute;
   z-index: 1;
-  bottom: -40%;
-  right: 120%;
+  bottom: 130%;
+  right: 0;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
+}
+
+.tooltiptext img {
+  width: 2em;
+  height: 2em;
+  aspect-ratio: 1;
+
+  margin: .5rem .3rem;
+}
+
+.tooltiptext img:not(:last-child){
+  margin-bottom: 1rem;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -421,8 +435,19 @@ a {
 }
 
 /* Technologies Section Styling */
-.tech-section > .heading{
-  text-align: center;
+.technologies {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+}
+
+.technologies ul {
+  margin: 0;
+  padding: 1rem;
+}
+
+.tech {
+  font-size: 2em;
 }
 
 @media screen and (min-width: 640px) {
