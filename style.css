@@ -16,6 +16,7 @@
 }
 
 body {
+  font-size: 1rem;
   margin: 0;
   background-color: var(--main-bg-clr);
   color: var(--white-clr);
@@ -68,9 +69,7 @@ section {
   position: sticky;
   top: 0;
 
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
+  
 } */
 
 
@@ -96,4 +95,14 @@ section {
   position: sticky;
   top: 0;
   height: 100%;
+
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    font-size: 12px;
+  }
 }
