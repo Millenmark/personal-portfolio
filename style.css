@@ -26,7 +26,7 @@ header {
   /* height: 45px; */
   /* border: 3px solid white; */
   position: fixed;
-  padding-top: 2.75rem;
+  padding-top: 2rem;
   width: 100%;
   text-align: center;
   z-index: 999;
@@ -84,6 +84,7 @@ section {
 
 
 main {
+  scroll-snap-type: y mandatory;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -92,17 +93,39 @@ main {
 }
 
 section {
-  position: sticky;
-  top: 0;
-  height: 100%;
+  scroll-snap-align: start;
+  /* position: sticky;
+  top: 0; */
+  height: 100vh;
 
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+  background-attachment: fixed !important;
 }
 
 @media screen and (max-width: 360px) {
   body {
     font-size: 12px;
   }
+}
+.container {
+  /* border: 3px solid red; */
+  max-width: 1200px;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 1rem;
+
+  overflow: auto;
+}
+.card {
+  max-width: 380px;
+  height: 380px;
+  aspect-ratio: 1;
+  background-color: gray;
 }
