@@ -148,7 +148,7 @@ START OF DESIGNING OF ALL THE CONTENT PER SECTION
 
 */
 
-.details {
+.details, .about {
   /* border: 3px solid red; */
   width: 100%;
   display: flex;
@@ -220,6 +220,25 @@ START OF DESIGNING OF ALL THE CONTENT PER SECTION
   border-radius: 50%;
   margin-bottom: .4rem;
 }
+
+
+/* 
+
+ABOUT
+
+*/
+
+.about__my-title {
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+.about__my-title h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.0925em;
+}
+
+
 
 
 @media screen and (min-width: 768px) {
