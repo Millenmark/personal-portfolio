@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
+  --main-font: 'Poppins', sans-serif;
+
   --main-bg-clr: #1e1e1e;
   --white-clr: #f6f6f6;
 }
@@ -17,6 +19,7 @@
 
 body {
   font-size: 1rem;
+  font-family: var(--main-font);
   margin: 0;
   background-color: var(--main-bg-clr);
   color: var(--white-clr);
@@ -30,6 +33,12 @@ header {
   width: 100%;
   text-align: center;
   z-index: 999;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -110,6 +119,7 @@ section {
   }
 }
 .container {
+  position: relative;
   /* border: 3px solid red; */
   max-width: 1200px;
   height: 100%;
@@ -123,9 +133,110 @@ section {
 
   overflow: auto;
 }
+
 .card {
   max-width: 380px;
   height: 380px;
   aspect-ratio: 1;
   background-color: gray;
+}
+
+
+/* 
+
+START OF DESIGNING OF ALL THE CONTENT PER SECTION
+
+*/
+
+.details {
+  /* border: 3px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+
+  font-size: clamp(1rem, 5vw, 2rem); /* 16px */
+  line-height: 1.5rem; /* 24px */
+  margin-inline: .5rem;
+}
+
+.details__my-title {
+  /* padding-left: 5rem; */
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+.details__my-title h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.0925em;
+}
+
+.details__my-title h1 > span {
+  font-size: .75em;
+  letter-spacing: 0;
+  letter-spacing: 0.26em;
+  font-weight: 300;
+}
+
+.details__my-title p {
+  font-weight: 300;
+  font-size: .6em;
+  letter-spacing: .342em;
+}
+
+.details__icons ul{
+  margin-top: 1.5rem;
+  gap: 1em;
+  display: flex;
+}
+
+.details__icons ul li img {
+  width: clamp(27px, 6vw, 35px )
+}
+
+.outer-circle {
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 30px;
+  /* background-color: white; */
+  border: 3px solid var(--white-clr);
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.inner-circle {
+  width: 14px;
+  height: 14px;
+  aspect-ratio: 1;
+  background-color: var(--white-clr);
+  border-radius: 50%;
+  margin-bottom: .4rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .details {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .details__my-title {
+    padding-left: 5rem;
+  }
+
+  .details__icons ul {
+    margin-top: 0;
+
+    margin-left: 1.5rem;
+    flex-direction: column;
+  }
+
 }
