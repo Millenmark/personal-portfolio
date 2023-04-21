@@ -240,15 +240,19 @@ ABOUT
   margin-inline: .5rem;
 }
 
-.about__my-title {
+.about__my-title, .about__stack {
   font-size: 1.5em;
   line-height: 1.3em;
 }
 
-.about__my-title h1 {
+.about__my-title h1, .about__stack h1 {
   text-transform: uppercase;
   letter-spacing: 0.0925em;
   text-align: center;
+}
+
+.about__stack h1 {
+  display: none;
 }
 
 .about__my-title p {
@@ -258,22 +262,36 @@ ABOUT
   text-align: justify;
 }
 
+.about__my-title button {
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: .4rem .8rem;
+  text-transform: uppercase;
+  background: transparent;
+  font-family: var(--main-font);
+  font-weight: 500;
+  color: var(--white-clr);
+  border-radius: 2px;
+  border: 2px solid var(--white-clr)
+}
+
 .about__stack {
   margin-top: 2rem;
 }
 
 .about__stack h2 {
   text-align: center;
-  font-weight: 300;
-  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25rem;
   letter-spacing: .342em;
 }
 
-.about_stack-items {
+.about__stack-items {
   margin-top: 1.25rem;
 }
 
-.about_stack-items ul {
+.about__stack-items ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,6 +316,51 @@ ABOUT
 
     margin-left: 1.5rem;
     flex-direction: column;
+  }
+
+  /* 
+    ABOUT
+  */
+  .about {
+    flex-direction: row-reverse;
+  }
+
+  .about > * {
+    flex: 1;
+    gap: 2.75rem;
+  }
+
+  .about__my-title h1 {
+    display: none;
+  }
+
+  .about__stack {
+    margin-top: 0;
+  }
+
+  .about__stack h1 {
+    display: block;
+    /* text-align: left; */
+  }
+
+  .about__my-title p {
+    padding: 1rem;
+    margin-top: 0;
+  }
+
+  .about__stack-tech {
+    position: relative;
+    margin-top: 1.25rem;
+  }
+
+  .about__stack-tech::after {
+    content: '';
+    position: absolute;
+    height: 76.5%;
+    top: 0;
+    left: 15%;
+    border-left: 3px solid var(--white-clr);
+
   }
 
 }
