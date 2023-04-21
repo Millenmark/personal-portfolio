@@ -236,6 +236,14 @@ ABOUT
 .about__my-title h1 {
   text-transform: uppercase;
   letter-spacing: 0.0925em;
+  text-align: center;
+}
+
+.about__my-title p {
+  margin-top: 1rem;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  text-align: justify;
 }
 
 
