@@ -300,6 +300,7 @@ ABOUT
 }
 
 .stack-circle {
+  display: none;
   position: absolute;
   left: -1%;
   bottom: 20%;
@@ -308,6 +309,66 @@ ABOUT
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: var(--white-clr);
+}
+
+/* 
+
+  PROJECTS
+
+*/
+
+.projects {
+  /* border: 3px solid red; */
+  margin-block: auto;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.projects h2 {
+  font-size: clamp(1.5rem, 6vw, 2rem);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.projects > p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.projects__wrapper {
+  margin-top: 2rem;
+}
+
+.projects__wrapper h3{
+  margin-block: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .5rem;
+}
+
+.card-item{
+  margin-inline: auto;
+  max-width: 380px;
+  height: 380px;
+  aspect-ratio: 1;
+
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.projects__personal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 
@@ -392,6 +453,10 @@ ABOUT
     left: 0;
     border-left: 3px solid var(--white-clr);
     border-top: 3px solid var(--white-clr);
+  }
+
+  .stack-circle {
+    display: block;
   }
 
 }
