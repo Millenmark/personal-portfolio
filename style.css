@@ -351,23 +351,32 @@ ABOUT
 }
 
 .projects__wrapper {
+  width: 100%;
   margin-top: 2rem;
 }
 
 .projects__wrapper h3{
-  margin-block: 2rem;
+  margin-block: 2.5rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .5rem;
 }
 
+.projects__frontend {
+  padding-top: 2rem;
+}
+
+.projects__frontend, .projects__personal {
+  width: 100%;
+}
+
 .card-item{
   position: relative;
   cursor: pointer;
   margin-inline: auto;
-  max-width: 380px;
-  height: 380px;
+  width: min(100%, 380px);
+  /* height: 380px; */
   aspect-ratio: 1;
 
   background-repeat: no-repeat !important;
@@ -375,11 +384,11 @@ ABOUT
   background-size: cover !important;
 }
 
-.projects__personal-cards {
+.projects__personal-cards, .projects__frontend-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .card-item:hover .live {
