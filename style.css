@@ -78,6 +78,10 @@ a {
   align-items: center;
 }
 
+.nav__logo img {
+  width: 40px;
+}
+
 .nav__items {
   display: flex;
   gap: 1.75rem;
@@ -145,6 +149,10 @@ a {
   overflow: hidden;
   font-size: 20px;
 }
+
+/* .hero__illustration__text {
+  margin-block: 5px;
+} */
 
 .hero__illustration__image {
   width: 100%;
