@@ -22,3 +22,8 @@ heroTimeline.from(".gsap__hero__item", {
   opacity: 0,
   stagger: 0.2,
 });
+
+heroTimeline.from(".hero__illustration", {
+  y: 30,
+  opacity: 0,
+});
