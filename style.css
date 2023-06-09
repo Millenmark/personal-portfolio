@@ -164,3 +164,92 @@ a {
 .hero__illustration__image {
   width: 100%;
 }
+
+/* PROJECT SECTION */
+.horizontal__animation-wrapper {
+  height: 100vh;
+  display: flex;
+}
+
+.animation__content-wrapper {
+  display: flex;
+  max-width: 1220px;
+  padding: 2rem;
+  gap: 5rem;
+  margin: auto;
+}
+
+.animation__title {
+  font-size: 2.5rem;
+  flex: 0 0 250px;
+}
+
+.project:not(:last-child) {
+  position: relative;
+  flex: 0 0 400px;
+  min-height: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #13161d;
+  border: 1px solid #707070;
+}
+
+.project img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project > h3 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  white-space: nowrap;
+}
+
+.project__description {
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #b4b4b4;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.project__item__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project__item__link:hover {
+  color: #79ffb1;
+}
+
+.project__gallery {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: #707070;
+  transition: color ease 0.3s;
+}
+
+.project__gallery svg {
+  margin-top: 0.4rem;
+}
+
+.project__gallery:hover {
+  color: #79ffb1;
+}
