@@ -184,6 +184,10 @@ a {
   flex: 0 0 250px;
 }
 
+.projects {
+  padding-block: 3rem;
+}
+
 .project {
   position: relative;
   flex: 0 0 400px;
