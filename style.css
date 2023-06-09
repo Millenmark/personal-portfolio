@@ -194,6 +194,11 @@ a {
   border: 1px solid #707070;
 }
 
+.project:last-child {
+  border: none;
+  background-color: transparent;
+}
+
 .project img {
   width: 100%;
   object-fit: cover;
@@ -276,7 +281,7 @@ a {
     flex-basis: 200px;
   }
 
-  .project:not(:last-child) {
+  .project {
     flex-basis: 300px;
   }
 }
@@ -303,6 +308,14 @@ a {
   .animation__title {
     font-size: 1.75rem;
     flex-basis: 150px;
+  }
+  .project > h3 {
+    font-size: 1rem;
+    top: 2.5%;
+  }
+
+  .project__description {
+    font-size: 0.8rem;
   }
 
   .project {
