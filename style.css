@@ -184,7 +184,7 @@ a {
   flex: 0 0 250px;
 }
 
-.project:not(:last-child) {
+.project {
   position: relative;
   flex: 0 0 400px;
   min-height: 350px;
@@ -305,7 +305,7 @@ a {
     flex-basis: 150px;
   }
 
-  .project:not(:last-child) {
+  .project {
     flex-basis: 250px;
   }
 }
