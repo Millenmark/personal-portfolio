@@ -299,4 +299,13 @@ a {
     width: 250px;
     padding-bottom: 2rem;
   }
+
+  .animation__title {
+    font-size: 1.75rem;
+    flex-basis: 150px;
+  }
+
+  .project:not(:last-child) {
+    flex-basis: 250px;
+  }
 }
