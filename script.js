@@ -43,3 +43,46 @@ gsap.from(".hero__illustration__text", {
   opacity: 1,
   delay: 1,
 });
+
+// PROJECT SECTION
+const horizontalSections = gsap.utils.toArray(".horizontal");
+
+horizontalSections.forEach((section) => {
+  let horizontalWrapper = section.querySelector(
+    ".horizontal__animation-wrapper"
+  );
+  let horizontalContentWrapper = section.querySelector(
+    ".animation__content-wrapper"
+  );
+
+  let getToValue = () =>
+    -(horizontalContentWrapper?.scrollWidth - window.innerWidth / 2);
+
+  if (window.innerWidth < 650) {
+    getToValue = () =>
+      -(horizontalContentWrapper?.scrollWidth - window.innerWidth / 2 - 140);
+  }
+
+  gsap.fromTo(
+    horizontalWrapper,
+    {
+      x: () =>
+        horizontalWrapper.classList.contains("to--right") ? 0 : getToValue(),
+    },
+    {
+      x: () =>
+        horizontalWrapper.classList.contains("to--right") ? getToValue() : 0,
+      ease: "none",
+      scrollTrigger: {
+        trigger: horizontalWrapper,
+        start: "top top",
+        end: () =>
+          "+=" +
+          (horizontalContentWrapper?.scrollWidth - window.innerWidth / 2 - 120),
+        pin: horizontalWrapper,
+        invalidateOnRefresh: true,
+        scrub: true,
+      },
+    }
+  );
+});
