@@ -71,11 +71,12 @@ a {
   margin-top: 1.5rem;
   width: 100%;
   max-width: 1220px;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 0;
 }
 
 .nav__logo img {
@@ -97,6 +98,10 @@ a {
 }
 
 /* HERO */
+.hero {
+  background: linear-gradient(rgb(8, 7, 11), rgb(23, 28, 35));
+}
+
 .hero__content {
   flex: 1.5;
 }
@@ -124,8 +129,9 @@ a {
 .hero__content__link {
   margin-top: 1rem;
   color: rgb(180, 180, 180);
-  font-size: 0.8rem;
-  text-decoration: underline;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(180, 180, 180);
 }
 
 .hero__content__title--accent {
@@ -145,7 +151,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 30px;
+  height: 25px;
   overflow: hidden;
   font-size: 20px;
 }
