@@ -253,3 +253,28 @@ a {
 .project__gallery:hover {
   color: #79ffb1;
 }
+
+@media screen and (max-width: 768px) {
+  .hero__content__title {
+    font-size: 2.25rem;
+  }
+
+  .hero__content_title--small {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .hero__content__title {
+    margin-top: 2.75rem;
+  }
+
+  .hero__illustration {
+    width: 250px;
+    padding-bottom: 2rem;
+  }
+}
