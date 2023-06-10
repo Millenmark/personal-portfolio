@@ -263,6 +263,91 @@ a {
   color: #79ffb1;
 }
 
+/* RESUME */
+.resume {
+  background-color: #080816;
+}
+
+.resume__content {
+  margin-left: 1rem;
+}
+
+.resume__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.resume__item {
+  position: relative;
+  padding-left: 70px;
+  padding-bottom: 50px;
+}
+
+.resume__item::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  background-color: rgb(180, 180, 180);
+  width: 1px;
+  height: 100%;
+  z-index: 0;
+}
+
+.resume__year,
+.resume__place {
+  position: relative;
+  font-size: 0.9rem;
+  color: rgb(180, 180, 180);
+}
+
+.resume__year {
+  transition: color 0.3s ease;
+}
+
+.resume__item:hover .resume__year {
+  color: #79ffb1;
+}
+
+.resume__item:hover .resume__year::after {
+  background-color: #79ffb1;
+}
+
+.resume__year::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -76px;
+  background-color: rgb(180, 180, 180);
+  width: 12px;
+  height: 12px;
+  z-index: 1;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.resume__activity {
+  font-size: 1.75rem;
+  margin-block: 5px;
+}
+
+.resume__body {
+  flex: 1;
+}
+
+.resume__illustration {
+  flex: 1;
+}
+
+.resume__illustration img {
+  width: 100%;
+}
+
+/* RESPONSIVENESS ----------------------------------------------------- */
+/* RESPONSIVENESS ----------------------------------------------------- */
+/* RESPONSIVENESS ----------------------------------------------------- */
+/* RESPONSIVENESS ----------------------------------------------------- */
+
 @media screen and (max-width: 768px) {
   .nav {
     padding-inline: 1rem;
@@ -324,5 +409,9 @@ a {
 
   .project {
     flex-basis: 280px;
+  }
+
+  .resume__illustration {
+    display: none;
   }
 }
