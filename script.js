@@ -99,7 +99,7 @@ projectsTimeline.from(".projects__main__title", {
   scale: 0.5,
   opacity: 0,
   duration: 1,
-  delay: 0.5,
+  delay: 0.3,
   ease: "back",
 });
 
@@ -107,4 +107,20 @@ projectsTimeline.from(".gsap-project__item", {
   y: 30,
   opacity: 0,
   stagger: 0.2,
+});
+
+// Resume Section
+
+const resumeTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#resume",
+    start: "top bottom",
+    toggleActions: "restart none restart none",
+  },
+});
+
+resumeTimeline.from(".gsap-resume__item", {
+  y: 30,
+  opacity: 0,
+  stagger: 0.3,
 });
