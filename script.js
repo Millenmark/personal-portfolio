@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 //Hero Section
 
 const heroTimeline = gsap.timeline({
-  ScrollTrigger: {
+  scrollTrigger: {
     trigger: "#hero",
     start: "top bottom",
     toggleActions: "play none restart none",
@@ -85,4 +85,26 @@ horizontalSections.forEach((section) => {
       },
     }
   );
+});
+
+const projectsTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#projects",
+    start: "top bottom",
+    toggleActions: "restart none none none",
+  },
+});
+
+projectsTimeline.from(".projects__main__title", {
+  scale: 0.5,
+  opacity: 0,
+  duration: 1,
+  delay: 0.5,
+  ease: "back",
+});
+
+projectsTimeline.from(".gsap-project__item", {
+  y: 30,
+  opacity: 0,
+  stagger: 0.2,
 });
