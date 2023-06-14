@@ -124,3 +124,48 @@ resumeTimeline.from(".gsap-resume__item", {
   opacity: 0,
   stagger: 0.3,
 });
+
+// SERVICE SECTION
+// const servicesTimeline = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".services",
+//     start: "top top",
+//     end: "+=4000",
+//     scrub: true,
+//     pin: true,
+//     anticipatePin: true,
+//   },
+// });
+
+// servicesTimeline.from(".gsap-services-item-1", {
+//   xPercent: -100,
+// });
+
+// servicesTimeline.from(".gsap-services-item-2", {
+//   yPercent: -100,
+// });
+
+// servicesTimeline.from(".gsap-services-item-3", {
+//   xPercent: 100,
+// });
+
+// servicesTimeline.from(".gsap-services-item-4", {
+//   yPercent: 100,
+// });
+
+// TECH SECTION
+const techTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".tech",
+    start: "top bottom",
+    toggleActions: "restart none restart none",
+  },
+});
+
+techTimeline.from(".gsap-tech__item", {
+  opacity: 0,
+  scale: 0.5,
+  ease: "back",
+  duration: 0.5,
+  stagger: 0.3,
+});
