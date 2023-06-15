@@ -464,14 +464,57 @@ a {
   gap: 0.7rem;
   background: rgb(23, 28, 35);
   height: 150px;
-  flex: 0 0 150px;
+  width: 150px;
   border-radius: 1rem;
+  padding: 2rem;
 }
 
 .tech__item img {
-  height: 70px;
+  width: 100%;
 }
 
+.tech__item span {
+  white-space: nowrap;
+}
+
+/* CONTACT SECTION */
+.contact {
+  background-color: #080816;
+}
+
+.contact .content-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1;
+  transition: scale 0.2s ease;
+}
+
+.social:hover {
+  scale: 1.1;
+}
+
+.social img {
+  width: 100%;
+}
+
+.contact__details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+}
 /* RESPONSIVENESS ----------------------------------------------------- */
 /* RESPONSIVENESS ----------------------------------------------------- */
 /* RESPONSIVENESS ----------------------------------------------------- */
@@ -542,5 +585,14 @@ a {
 
   .resume__illustration {
     display: none;
+  }
+
+  .tech__item {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tech__item span {
+    font-size: 12px;
   }
 }
